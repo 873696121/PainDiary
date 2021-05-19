@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "727571273480",
+    "project_id": "my-pain-dairy",
+    "storage_bucket": "my-pain-dairy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727571273480:android:29045f562e595828797ebd",
+        "android_client_info": {
+          "package_name": "com.example.huhong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727571273480-un4ammqdt5vcbnf82i7n7nunicggbi1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaK6gm_pFHxJkBWAohaFo0SwwI4HHpQNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727571273480-un4ammqdt5vcbnf82i7n7nunicggbi1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

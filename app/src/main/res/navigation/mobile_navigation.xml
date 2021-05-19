@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home_fragment">
+    <fragment
+            android:id="@+id/nav_pain_data_entry"
+            android:name="com.example.huhong.painDiary.fragment.PainDataEntryFragment"
+            android:label="Pain Data Entry" />
+    <fragment
+            android:id="@+id/nav_home_fragment"
+            android:name="com.example.huhong.painDiary.fragment.HomeFragment"
+            android:label="Home" />
+    <fragment
+            android:id="@+id/nav_daily_record"
+            android:name="com.example.huhong.painDiary.fragment.DailyRecordFragment"
+            android:label="Daily Record" />
+    <fragment
+            android:id="@+id/nav_reports"
+            android:name="com.example.huhong.painDiary.fragment.ReportsFragment"
+            android:label="Reports"
+            tools:layout="@layout/fragment_reports" />
+    <fragment
+            android:id="@+id/nav_map"
+            android:name="com.example.huhong.painDiary.fragment.MapFragment"
+            android:label="Map"
+            tools:layout="@layout/fragment_map" />
+</navigation>

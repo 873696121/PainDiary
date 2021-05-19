@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:max="10"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="@+id/guideline17"
+            app:layout_constraintBottom_toTopOf="@+id/guideline17" />
+
+    <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.783"
+            app:layout_constraintTop_toTopOf="@+id/guideline16"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16" />
+
+    <TextView
+            android:text="1. pain intensity level: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline16"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16" />
+
+    <TextView
+            android:text="2. location of pain"
+            android:layout_width="242dp"
+            android:layout_height="36dp"
+            android:id="@+id/textView11"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline18"
+            app:layout_constraintBottom_toTopOf="@+id/guideline18" />
+
+    <Spinner
+            android:layout_width="148dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.382"
+            app:layout_constraintTop_toTopOf="@+id/guideline19"
+            app:layout_constraintBottom_toTopOf="@+id/guideline19" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline3"
+            app:layout_constraintGuide_begin="374dp"
+            android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline4"
+            app:layout_constraintGuide_begin="142dp"
+            android:orientation="vertical" />
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            android:id="@+id/radioGroup">
+
+        <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_baseline_sentiment_very_satisfied_24"
+                android:id="@+id/radioButton1" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:layout_weight="1"
+                android:button="@drawable/ic_baseline_sentiment_satisfied_alt_24" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3"
+                android:layout_weight="1"
+                android:button="@drawable/ic_baseline_sentiment_satisfied_24" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton4"
+                android:layout_weight="1"
+                android:button="@drawable/ic_baseline_sentiment_dissatisfied_24" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton5"
+                android:layout_weight="1"
+                android:button="@drawable/ic_baseline_sentiment_very_dissatisfied_24" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline6"
+            app:layout_constraintGuide_begin="311dp"
+            android:orientation="horizontal" />
+
+    <TextView
+            android:text="3. choose your mood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            android:textSize="24sp"
+            app:layout_constraintHorizontal_bias="0.236" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline7"
+            app:layout_constraintGuide_begin="43dp"
+            android:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline8"
+            app:layout_constraintGuide_begin="376dp"
+            android:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline9"
+            app:layout_constraintGuide_begin="443dp"
+            android:orientation="horizontal" />
+
+    <TextView
+            android:text="4. set your goal and enter your steps today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/guideline9"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintVertical_bias="0.631"
+            android:textSize="18sp" />
+
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="44dp"
+            android:inputType="text"
+            android:hint="enter your goal"
+            android:text="10000"
+            android:ems="10"
+            android:id="@+id/editGoal"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline13"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintVertical_bias="0.477"
+            android:editable="false" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline13"
+            app:layout_constraintGuide_begin="507dp"
+            android:orientation="horizontal" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="enter your steps today"
+            android:ems="10"
+            android:id="@+id/editCurrentSteps"
+            app:layout_constraintTop_toTopOf="@+id/guideline13"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintHorizontal_bias="0.275"
+            app:layout_constraintVertical_bias="0.511" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline14"
+            app:layout_constraintGuide_begin="224dp"
+            android:orientation="vertical" />
+
+    <Button
+            android:text="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/entry_save"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline20"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20" />
+
+    <Button
+            android:text="edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/entry_edit"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/entry_save"
+            android:layout_marginStart="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline16"
+            app:layout_constraintGuide_begin="56dp"
+            android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline17"
+            app:layout_constraintGuide_begin="107dp"
+            android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline18"
+            app:layout_constraintGuide_begin="166dp"
+            android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline19"
+            app:layout_constraintGuide_begin="230dp"
+            android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline20"
+            app:layout_constraintGuide_begin="576dp"
+            android:orientation="horizontal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
