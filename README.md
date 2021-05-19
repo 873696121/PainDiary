@@ -14,7 +14,7 @@
 
 - RegisterActivity
 
-  注册activity， 使用firebase
+  注册activity， 使用room数据库user表
 
 - HomeAcvivity
 
